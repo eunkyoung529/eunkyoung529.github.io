@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodyNow | 김은경 포트폴리오</title>
+  <meta name="description" content="LLM · RAG 기반으로 사용자 옷 이미지, 날씨, 프로필 정보를 분석해 맞춤 코디를 추천하는 AI 패션 서비스 CodyNow.">
+  <meta property="og:title" content="CodyNow | 김은경 포트폴리오">
+  <meta property="og:image" content="https://eunkyoung529.github.io/assets/img/codynow-cody.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111827'/%3E%3Cpath d='M12 11l-5 5 5 5M20 11l5 5-5 5' fill='none' stroke='%2310B981' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="case">
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html">Kim Eunkyoung<i>.</i></a>
+    <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
+    <nav class="nav">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#etc">Etc.</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cover">
+    <div class="container cover-grid">
+      <div class="cover-text">
+        <a class="back" href="../index.html#projects">← Projects</a>
+        <p class="eyebrow">// PROJECT 02</p>
+        <h1>CodyNow</h1>
+        <p class="cover-desc">LLM · RAG 기반으로 사용자 옷 이미지, 날씨, 프로필 정보를 분석해 맞춤 코디를 추천하는 AI 패션 서비스</p>
+        <ul class="cover-meta"><li>2025.01 – 02</li><li>5인 팀</li><li>Backend · AI</li></ul>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://github.com/pirogramming/Cody-Now" target="_blank" rel="noopener">GitHub 저장소
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+      <div class="cover-shot contain">
+        <img src="../assets/img/codynow-cody.png" alt="CodyNow 코디 생성 화면" width="940" height="577">
+      </div>
+    </div>
+  </section>
+
+  <nav class="toc" aria-label="이 페이지 목차">
+    <div class="container">
+      <ul data-spy>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#system">System</a></li>
+        <li><a href="#flow">Service Flow</a></li>
+        <li><a href="#rag">RAG</a></li>
+        <li><a href="#demo">Demo</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Overview -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Overview</p>
+        <h2>프로젝트 개요</h2>
+      </div>
+      <div class="split reveal">
+        <div class="stack">
+          <div>
+            <p class="summary">날씨, 취향, 스타일 정보를 종합해 SPA 브랜드 상품을 직접 추천해주는 서비스입니다.</p>
+            <p>LLM · RAG로 옷 이미지와 날씨, 프로필 정보를 분석해 구매 링크까지 포함한 코디를 만듭니다.</p>
+          </div>
+          <dl class="info">
+            <div><dt>기간</dt><dd>2025.01 – 2025.02 (3주)</dd></div>
+            <div><dt>인원</dt><dd>5명 (FE 2 · BE/AI 2 · PM/Server 1)</dd></div>
+            <div><dt>담당</dt><dd>Backend / AI</dd></div>
+            <div><dt>링크</dt><dd><a href="https://github.com/pirogramming/Cody-Now" target="_blank" rel="noopener">github.com/pirogramming/Cody-Now</a></dd></div>
+          </dl>
+          <ul class="chips"><li>Python</li><li>Django</li><li>PostgreSQL</li><li>RAG</li><li>LLM</li><li>Vertex AI</li><li>AWS</li><li>GitHub Actions</li><li>CI/CD</li><li>HTML/CSS</li><li>JavaScript</li></ul>
+        </div>
+        <figure class="figure pad"><img src="../assets/img/codynow-onboarding.png" alt="CodyNow 로그인과 온보딩 화면" loading="lazy" width="1162" height="565"><figcaption>로그인 · 온보딩 화면</figcaption></figure>
+      </div>
+
+      <h3 class="sub-head reveal">주요 기능</h3>
+      <div class="grid-3 reveal">
+        <div class="mini feature" style="border-color:var(--accent);background:var(--accent-soft)"><small>FEATURE 01 · 핵심</small><b>옷 이미지 → 코디 자동 생성</b><span>단순 추천이 아닌 구체적인 제품 구매 링크까지 제공</span></div>
+        <div class="mini feature"><small>FEATURE 02</small><b>디지털 옷장</b><span>이미지 업로드로 쌓인 데이터를 기반으로 옷장 상태를 실시간 저장</span></div>
+        <div class="mini feature"><small>FEATURE 03</small><b>코디 서랍장</b><span>마음에 든 코디와 옷을 다시 찾아볼 수 있음</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System -->
+  <section class="section alt" id="system">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">System</p>
+        <h2>시스템 구조 &amp; 인프라</h2>
+      </div>
+      <div class="split reveal">
+        <ol class="numlist">
+          <li><div><b>GitHub Actions</b><span>PUSH 시 자동 빌드 · 배포, Slack으로 실시간 모니터링</span></div></li>
+          <li><div><b>Nginx · Gunicorn · Django</b><span>메인 서버와 PostgreSQL</span></div></li>
+          <li><div><b>Vertex AI + Google Search</b><span>최신 정보를 검색해 반영하는 코디북 생성 엔진</span></div></li>
+          <li><div><b>Cloudflare</b><span>DDoS 차단, 로딩 속도 향상, 정적 파일 CDN 캐싱</span></div></li>
+        </ol>
+        <figure class="figure pad"><img src="../assets/img/codynow-arch.png" alt="CodyNow 시스템 구조 다이어그램" loading="lazy" width="1216" height="676"><figcaption>시스템 구조 — 클릭하면 크게 볼 수 있습니다</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Flow -->
+  <section class="section" id="flow">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Service Flow</p>
+        <h2>서비스 흐름</h2>
+        <p class="lead">사용자 정보와 날씨, 업로드한 옷을 종합해 LLM이 코디를 추천하고 디지털 옷장에 저장합니다.</p>
+      </div>
+      <div class="split wide-left reveal">
+        <div>
+          <h3 class="sub-head">코디 추천에 들어가는 정보</h3>
+          <div class="grid-3">
+            <div class="mini"><b>사용자 프로파일링</b><span>키 · 체형 · 선호 스타일</span></div>
+            <div class="mini"><b>날씨 정보</b><span>위치 기반, 기상청 API</span></div>
+            <div class="mini"><b>SPA 브랜드 카탈로그</b><span>크롤링 Agent로 상품 정보 수집</span></div>
+          </div>
+
+          <h3 class="sub-head">사용자 여정</h3>
+          <ol class="flow steps c3">
+            <li><b>사용자 접속</b></li>
+            <li><b>사용자 프로파일링</b><span>키 · 체형 · 스타일</span></li>
+            <li><b>이미지 업로드</b></li>
+            <li class="dark"><b>코디 추천</b><span>LLM · 날씨 · 카탈로그</span></li>
+            <li><b>'나의 옷장' 추가</b></li>
+            <li class="hl"><b>디지털 옷장</b><span>digital twin</span></li>
+          </ol>
+          <div class="grid-2" style="margin-top:26px">
+            <div class="mini"><small>옷장에서 이어지는 기능</small><b>주간 코디 목록</b></div>
+            <div class="mini"><small>옷장에서 이어지는 기능</small><b>상품 구매 가이드</b><span>옷장 상태 기반</span></div>
+          </div>
+        </div>
+        <figure class="figure phone"><img src="../assets/img/codynow-home.png" alt="CodyNow 홈 화면 — 날씨와 오늘의 코디 추천" loading="lazy" width="265" height="528"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAG -->
+  <section class="section alt" id="rag">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">RAG</p>
+        <h2>RAG 기반 코디북 생성</h2>
+        <p class="lead">AI가 직접 Google 검색으로 최신 정보를 찾아 반영한 코디북을 생성합니다.</p>
+      </div>
+
+      <ol class="flow has-sub reveal">
+        <li><b>사용자 요청</b><span>옷 이미지 · 날씨 · 프로필</span></li>
+        <li class="dark"><b>Vertex AI</b><span>Gemini</span>
+          <div class="sub"><b>⇅ Google Search</b>최신 상품 · 트렌드 검색 요청 / 결과</div>
+        </li>
+        <li><b>Grounded 응답</b><span>근거 기반 생성</span></li>
+        <li class="hl"><b>코디북</b><span>코디 + 구매 링크</span></li>
+      </ol>
+
+      <div class="split even reveal">
+        <ol class="numlist">
+          <li><div><b>최신 패션 트렌드 반영</b><span>요청할 때마다 최신 데이터를 참고해 결과 도출</span></div></li>
+          <li><div><b>확장 가능성</b><span>검색 대상을 협력사 쇼핑몰 · 브랜드로 변경 가능</span></div></li>
+          <li><div><b>차별성</b><span>패션 분야에 RAG를 적용한 사례가 없음</span></div></li>
+        </ol>
+        <figure class="figure pad"><img src="../assets/img/codynow-codybook.png" alt="코디북 생성 예시 — 날씨에 적합한 주제어, 업로드한 옷 평가, 코디와 구매 링크 추천" loading="lazy" width="818" height="421"><figcaption>코디북 생성 예시</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <section class="section" id="demo">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Demo</p>
+        <h2>주요 화면</h2>
+      </div>
+      <div class="split wide-left reveal">
+        <figure class="figure pad" style="border-color:var(--accent)"><img src="../assets/img/codynow-cody.png" alt="CodyNow 코디 생성 화면" loading="lazy" width="940" height="577"><figcaption><b>코디 생성 (핵심 기능)</b> — 옷 사진을 올리면 AI가 분석하고 어울리는 코디와 구매 링크를 추천</figcaption></figure>
+        <div class="stack">
+          <figure class="figure pad"><img src="../assets/img/codynow-onboarding.png" alt="CodyNow 온보딩 화면" loading="lazy" width="1162" height="565"><figcaption><b>온보딩</b> — 성별 · 나이 · 선호 스타일 선택</figcaption></figure>
+          <figure class="figure pad"><img src="../assets/img/codynow-closet.png" alt="CodyNow 나만의 옷장 화면" loading="lazy" width="990" height="604"><figcaption><b>나만의 옷장</b> — 카테고리별 저장과 코디 기록</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <nav class="proj-nav" aria-label="다른 프로젝트">
+      <a href="moida.html"><small>← PROJECT 01</small><b>MOIDA</b></a>
+      <a class="next" href="edunote.html"><small>PROJECT 03 →</small><b>EduNote</b></a>
+    </nav>
+  </div>
+
+  <section class="outro">
+    <div class="container">
+      <p class="eyebrow">&lt;Contact /&gt;</p>
+      <h2>감사합니다</h2>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:eunkyoung4160@gmail.com">eunkyoung4160@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/eunkyoung529" target="_blank" rel="noopener">github.com/eunkyoung529</a>
+        <a class="btn btn-ghost" href="../index.html">홈으로</a>
+      </div>
+      <footer>© 2026 Kim Eunkyoung</footer>
+    </div>
+  </section>
+</main>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

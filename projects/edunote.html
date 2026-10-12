@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduNote | 김은경 포트폴리오</title>
+  <meta name="description" content="강의 녹음을 올리면 텍스트 변환 · AI 요약 · 퀴즈까지 만들어 주는 학습 서비스 EduNote — 백엔드 API와 서버 배포.">
+  <meta property="og:title" content="EduNote | 김은경 포트폴리오">
+  <meta property="og:image" content="https://eunkyoung529.github.io/assets/img/edunote-dashboard.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111827'/%3E%3Cpath d='M12 11l-5 5 5 5M20 11l5 5-5 5' fill='none' stroke='%2310B981' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="case">
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html">Kim Eunkyoung<i>.</i></a>
+    <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
+    <nav class="nav">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#etc">Etc.</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cover">
+    <div class="container cover-grid">
+      <div class="cover-text">
+        <a class="back" href="../index.html#projects">← Projects</a>
+        <p class="eyebrow">// PROJECT 03</p>
+        <h1>EduNote</h1>
+        <p class="cover-desc">강의 녹음을 올리면 텍스트 변환 · AI 요약 · 퀴즈까지 만들어 주는 학습 서비스</p>
+        <ul class="cover-meta"><li>2025.09 – 12</li><li>2인 팀</li><li>Backend · Server</li></ul>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://github.com/eunkyoung529/edu-note" target="_blank" rel="noopener">GitHub 저장소
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+      <div class="cover-shot left">
+        <div class="browser-bar"><i></i><i></i><i></i><em>EduNote</em></div>
+        <img src="../assets/img/edunote-dashboard.png" alt="EduNote 대시보드 화면" width="2791" height="1415">
+      </div>
+    </div>
+  </section>
+
+  <nav class="toc" aria-label="이 페이지 목차">
+    <div class="container">
+      <ul data-spy>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Overview -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Overview</p>
+        <h2>프로젝트 개요</h2>
+      </div>
+      <div class="split reveal">
+        <div class="stack">
+          <div>
+            <p class="summary">강의 녹음을 올리면 텍스트 변환 · AI 요약 · 퀴즈까지 만들어 주는 학습 서비스</p>
+            <p>녹음 파일은 쌓이는데 정리와 복습으로 이어지지 않는 문제를 풀고자 했습니다. 2인 팀에서 백엔드 API와 서버 배포를 맡았습니다.</p>
+          </div>
+          <dl class="info">
+            <div><dt>기간</dt><dd>2025.09 – 2025.12</dd></div>
+            <div><dt>인원</dt><dd>2명</dd></div>
+            <div><dt>역할</dt><dd>Backend · Server</dd></div>
+            <div><dt>링크</dt><dd><a href="https://github.com/eunkyoung529/edu-note" target="_blank" rel="noopener">github.com/eunkyoung529/edu-note</a></dd></div>
+          </dl>
+          <ul class="chips"><li>Java</li><li>Spring Boot</li><li>Spring Security(JWT)</li><li>JPA</li><li>PostgreSQL</li><li>AWS EC2</li><li>RDS</li><li>S3</li><li>Docker</li><li>GitHub Actions</li><li>FastAPI</li><li>Whisper</li><li>Gemini</li></ul>
+        </div>
+        <div class="stack">
+          <figure class="figure"><img src="../assets/img/edunote-dashboard.png" alt="EduNote 대시보드 — 총 파일, 변환된 글자, 예상 녹음 시간과 업로드 영역" loading="lazy" width="2791" height="1415"><figcaption>대시보드 — 녹음 업로드와 변환 현황</figcaption></figure>
+          <figure class="figure"><img src="../assets/img/edunote-summary.png" alt="EduNote 변환 결과 — 원문 스크립트와 AI 요약 노트" loading="lazy" width="2338" height="966"><figcaption>변환 결과 — 원문 스크립트와 AI 요약 노트</figcaption></figure>
+        </div>
+      </div>
+
+      <h3 class="sub-head reveal">담당 업무</h3>
+      <div class="roles reveal">
+        <article class="card role">
+          <h4>Backend</h4>
+          <ul><li>음성 업로드 → S3 저장 → 텍스트 변환 API</li><li>퀴즈 생성 · 조회 API</li><li>JWT 인증 필터 · Security 설정</li></ul>
+        </article>
+        <article class="card role">
+          <h4>Server</h4>
+          <ul><li>GitHub Actions → Docker Hub → EC2 자동 배포</li><li>DB · S3 · API 키를 Secrets로 관리</li></ul>
+        </article>
+        <article class="card role">
+          <h4>AI 연동</h4>
+          <ul><li>FastAPI 서버 (Whisper STT, Gemini 퀴즈)</li><li>Spring ↔ AI 서버 파일 전송</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pipeline -->
+  <section class="section alt" id="pipeline">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Pipeline</p>
+        <h2>음성이 학습 자료가 되기까지</h2>
+        <p class="lead">음성 파일은 Spring 서버와 AI 서버 두 곳을 거쳐 텍스트 · 요약 · 퀴즈가 됩니다.</p>
+      </div>
+      <ol class="flow reveal">
+        <li><b>음성 업로드</b><span>mp3 · m4a · wav</span></li>
+        <li><b>Spring Boot</b><span>S3 저장 · JWT 인증</span></li>
+        <li class="dark"><b>FastAPI 서버</b><span>Spring ↔ AI 서버 파일 전송</span></li>
+        <li><b>Whisper STT</b><span>텍스트 변환</span></li>
+        <li class="hl"><b>Gemini</b><span>퀴즈 생성</span></li>
+      </ol>
+      <h3 class="sub-head reveal">배포</h3>
+      <ol class="flow reveal">
+        <li><b>GitHub Actions</b><span>빌드</span></li>
+        <li><b>Docker Hub</b><span>이미지 푸시</span></li>
+        <li class="dark"><b>AWS EC2</b><span>자동 배포</span></li>
+      </ol>
+      <p class="note reveal">DB · S3 · API 키는 GitHub Secrets로 관리하고, 배포 시 컨테이너 환경변수로 주입합니다.</p>
+    </div>
+  </section>
+
+  <!-- Troubleshooting -->
+  <section class="section" id="troubleshooting">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Troubleshooting</p>
+        <h2>파일 처리 문제 해결</h2>
+        <p class="lead">음성 파일이 Spring 서버와 AI 서버 두 곳을 거치면서 생긴 문제를 로그로 추적해 해결했습니다.</p>
+      </div>
+
+      <div class="keypoint reveal" style="margin-bottom:32px">
+        <small>KEY POINT</small>
+        <h4>서버 사이 경계를 명시적으로</h4>
+        <p>파일 형식 · 응답 구조를 암묵적으로 맡기지 않고 직접 지정</p>
+        <p class="then">파일 크기 로그로 어느 구간에서 깨지는지 확인</p>
+      </div>
+
+      <div class="trouble reveal">
+        <div class="trouble-head"><span>문제</span><span>원인</span><span>해결</span></div>
+        <div class="trouble-row">
+          <div data-label="문제">mp3 업로드 시 텍스트 변환 실패</div>
+          <div data-label="원인">Spring → AI 서버 요청에 multipart 형식 지정이 빠지고, STT API에 파일명 · 형식 없이 전달</div>
+          <div data-label="해결">multipart 형식 명시, 파일명 · MIME 타입 함께 전달, 빈 파일 검증 추가</div>
+        </div>
+        <div class="trouble-row">
+          <div data-label="문제">변환 결과가 JSON 문자열 그대로 화면에 노출</div>
+          <div data-label="원인">AI 서버의 JSON 응답을 파싱하지 않고 문자열 그대로 DB에 저장</div>
+          <div data-label="해결">저장 전 텍스트만 추출, 이미 저장된 기록은 조회할 때 보정</div>
+        </div>
+        <div class="trouble-row">
+          <div data-label="문제">AWS · DB 접속 정보가 설정 파일에 포함</div>
+          <div data-label="원인">로컬과 운영 설정을 파일 하나로 관리</div>
+          <div data-label="해결">GitHub Secrets → 배포 시 컨테이너 환경변수로 주입</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <nav class="proj-nav" aria-label="다른 프로젝트">
+      <a href="codynow.html"><small>← PROJECT 02</small><b>CodyNow</b></a>
+      <a class="next" href="storydream.html"><small>PROJECT 04 →</small><b>StoryDream</b></a>
+    </nav>
+  </div>
+
+  <section class="outro">
+    <div class="container">
+      <p class="eyebrow">&lt;Contact /&gt;</p>
+      <h2>감사합니다</h2>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:eunkyoung4160@gmail.com">eunkyoung4160@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/eunkyoung529" target="_blank" rel="noopener">github.com/eunkyoung529</a>
+        <a class="btn btn-ghost" href="../index.html">홈으로</a>
+      </div>
+      <footer>© 2026 Kim Eunkyoung</footer>
+    </div>
+  </section>
+</main>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

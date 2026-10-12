@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StoryDream | 김은경 포트폴리오</title>
+  <meta name="description" content="아이의 눈높이에 맞춰 동화를 재구성하고 집중도에 반응해 대화하는 라즈베리파이 기반 인터랙티브 동화 기기 StoryDream.">
+  <meta property="og:title" content="StoryDream | 김은경 포트폴리오">
+  <meta property="og:image" content="https://eunkyoung529.github.io/assets/img/storydream-device.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111827'/%3E%3Cpath d='M12 11l-5 5 5 5M20 11l5 5-5 5' fill='none' stroke='%2310B981' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="case">
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html">Kim Eunkyoung<i>.</i></a>
+    <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
+    <nav class="nav">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects" class="active">Projects</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#etc">Etc.</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="cover">
+    <div class="container cover-grid">
+      <div class="cover-text">
+        <a class="back" href="../index.html#projects">← Projects</a>
+        <p class="eyebrow">// PROJECT 04</p>
+        <h1>StoryDream</h1>
+        <p class="cover-desc">아이의 눈높이에 맞춰 동화를 재구성하고 집중도에 반응해 대화하는 라즈베리파이 기반 인터랙티브 동화 기기</p>
+        <ul class="cover-meta"><li>2026.04 – 진행 중</li><li>3인 팀</li><li>PM · Backend · AI · HW 연동</li></ul>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.youtube.com/watch?v=4PdfgzbqCYQ" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>시연 영상 보기</a>
+        </div>
+      </div>
+      <div class="cover-shot">
+        <img src="../assets/img/storydream-device.jpg" alt="StoryDream 기기 — 구름 모양 본체와 터치 화면" width="1170" height="636">
+      </div>
+    </div>
+  </section>
+
+  <nav class="toc" aria-label="이 페이지 목차">
+    <div class="container">
+      <ul data-spy>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#report">AI 독서 리포트</a></li>
+        <li><a href="#difficulty">난이도 조절</a></li>
+        <li><a href="#illustration">삽화 생성</a></li>
+        <li><a href="#focus">집중도 감지</a></li>
+        <li><a href="#realtime">실시간 대화</a></li>
+        <li><a href="#result">Result</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Overview -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Overview</p>
+        <h2>프로젝트 개요</h2>
+      </div>
+      <div class="split reveal">
+        <div class="stack">
+          <div>
+            <p class="summary">아이 눈높이에 맞춰 동화를 읽어주고, 집중이 흐트러지면 말을 거는 AI 동화 기기</p>
+            <p>어휘 수준에 맞지 않는 동화와 단방향 전자책 때문에 아이들의 독서 흥미가 떨어진다는 문제에서 출발했습니다. 동화를 단계별 난이도로 재구성하고, 집중 상태에 반응하는 양방향 상호작용을 만들었습니다.</p>
+          </div>
+          <dl class="info">
+            <div><dt>기간</dt><dd>2026.04 – 진행 중</dd></div>
+            <div><dt>인원</dt><dd>3명</dd></div>
+            <div><dt>역할</dt><dd>Backend · AI · HW 연동</dd></div>
+            <div><dt>링크</dt><dd><a href="https://www.youtube.com/watch?v=4PdfgzbqCYQ" target="_blank" rel="noopener">시연 영상 (YouTube)</a></dd></div>
+          </dl>
+          <ul class="chips"><li>Spring Boot</li><li>JPA</li><li>PostgreSQL</li><li>FastAPI</li><li>React</li><li>AWS EC2</li><li>S3</li><li>Docker</li><li>Qwen</li><li>FLUX.1</li><li>YOLO</li><li>OpenAI Realtime API</li><li>TTS</li><li>Raspberry Pi</li></ul>
+        </div>
+        <a class="video-link" href="https://www.youtube.com/watch?v=4PdfgzbqCYQ" target="_blank" rel="noopener">
+          <img src="../assets/img/storydream-realtime.jpg" alt="StoryDream 시연 영상 장면 — 아이의 답변에 맞춰 캐릭터가 표정과 함께 반응" loading="lazy" width="1317" height="738">
+          <span class="play"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></i>시연 영상 보기 (YouTube)</span>
+        </a>
+      </div>
+
+      <h3 class="sub-head reveal">담당 업무</h3>
+      <div class="roles reveal">
+        <article class="card role">
+          <h4>Backend · Data</h4>
+          <ul><li>AI 독서 리포트 (비동기 생성 · 통계 조회)</li><li>JWT 회원가입 / 로그인 · 전역 예외처리</li><li>동화 데이터셋 수집 · 전처리</li></ul>
+        </article>
+        <article class="card role">
+          <h4>AI</h4>
+          <ul><li>LLM LoRA 튜닝 난이도 조절</li><li>FLUX 삽화 생성 파이프라인</li><li>YOLO 집중도 이탈 감지</li><li>Realtime API 캐릭터 대화</li></ul>
+        </article>
+        <article class="card role">
+          <h4>HW · 기획</h4>
+          <ul><li>서비스 기획</li><li>라즈베리파이 SW–HW 연동</li><li>LED 조명 · 엔코더 제어</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture -->
+  <section class="section alt" id="architecture">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Role &amp; System</p>
+        <h2>담당 역할 &amp; 아키텍처</h2>
+        <p class="lead">라즈베리파이 기기가 Spring 서버와 AI 서버를 호출하는 구조입니다. Spring 서버의 인증 및 리포트 도메인과 기기 쪽 AI 및 HW 연동을 맡았습니다.</p>
+      </div>
+      <figure class="figure pad reveal"><img src="../assets/img/storydream-arch.png" alt="StoryDream 서비스 아키텍처 다이어그램" loading="lazy" width="3341" height="1734"><figcaption>서비스 아키텍처 — 클릭하면 크게 볼 수 있습니다</figcaption></figure>
+      <ol class="numlist cols-2 reveal" style="margin-top:20px">
+        <li><div><b>Spring Boot</b><span>JWT 인증, AI 독서 리포트 생성 · 조회, 예외 처리</span></div></li>
+        <li><div><b>FastAPI AI</b><span>독서 기록을 받아 보호자용 요약 코멘트 생성</span></div></li>
+        <li><div><b>AI 파이프라인</b><span>난이도 조절 LLM, 삽화 생성, 집중도 감지 모델</span></div></li>
+        <li><div><b>라즈베리파이 기기</b><span>Realtime 캐릭터 대화, LED · 엔코더 연동</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- AI report -->
+  <section class="section" id="report">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Backend — 설계 판단</p>
+        <h2>AI 독서 리포트 생성</h2>
+        <p class="lead">독서가 끝나면 집중도 · 퀴즈 기록을 모아 LLM이 보호자용 리포트를 씁니다. 느리고 실패할 수 있는 AI 호출이 독서 기능을 막지 않도록 Spring에서 구조를 나눴습니다.</p>
+      </div>
+      <div class="split">
+        <div class="stack sticky-col reveal">
+          <div class="keypoint">
+            <small>KEY POINT</small>
+            <h4>독서 기능과 AI 리포트를 분리</h4>
+            <p>독서 완료는 즉시 응답하고, 리포트는 트랜잭션 커밋 후 별도 스레드에서 생성</p>
+            <p class="then">AI가 느리거나 실패해도 독서 기록은 안전</p>
+          </div>
+          <figure class="figure"><img src="../assets/img/storydream-report.png" alt="보호자용 독서 리포트 화면 — 평균 정답률, 기간 선택, AI 종합 분석" loading="lazy" width="683" height="393"><figcaption>보호자용 독서 리포트 화면</figcaption></figure>
+        </div>
+
+        <div class="reveal">
+          <h3 class="sub-head"><span class="mono">01</span>리포트 생성 시점</h3>
+          <div class="decision">
+            <div class="opts">
+              <div class="opt no"><b>독서 완료 API에서 바로 생성</b><span>LLM 응답 시간만큼 화면 대기</span></div>
+              <div class="opt no"><b>커밋 전에 이벤트 처리</b><span>저장 전 데이터 조회 · 롤백 시 불일치</span></div>
+            </div>
+            <span class="vs">→</span>
+            <div class="opt yes"><em class="tag">선택</em><b>커밋 후 비동기 이벤트</b><span>트랜잭션 커밋 후 전용 스레드풀에서 생성</span></div>
+          </div>
+
+          <h3 class="sub-head"><span class="mono">02</span>AI 장애 대응</h3>
+          <div class="decision">
+            <div class="opts">
+              <div class="opt no"><b>예외 처리 없이 두기</b><span>리포트가 '생성 중'에서 멈춤</span></div>
+              <div class="opt no"><b>실패 상태로 기록 (초기 구현)</b><span>실패 리포트는 목록에서 사라짐</span></div>
+            </div>
+            <span class="vs">→</span>
+            <div class="opt yes"><em class="tag">선택</em><b>기본 문구로 완료 처리</b><span>AI 코멘트만 대체하고 집중도 · 퀴즈 지표는 제공</span></div>
+          </div>
+
+          <h3 class="sub-head"><span class="mono">03</span>리포트 조회 쿼리</h3>
+          <div class="decision">
+            <div class="opts">
+              <div class="opt no"><b>연관 엔티티 지연 로딩</b><span>리포트마다 추가 쿼리 발생 (N+1)</span></div>
+              <div class="opt no"><b>전체 기록을 불러와 계산</b><span>주간 통계를 애플리케이션에서 반복 계산</span></div>
+            </div>
+            <span class="vs">→</span>
+            <div class="opt yes"><em class="tag">선택</em><b>Fetch Join · 집계 쿼리</b><span>연관 데이터를 한 번에 조회, 주간 통계는 DB에서 GROUP BY</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Difficulty -->
+  <section class="section alt" id="difficulty">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Difficulty</p>
+        <h2>난이도 조절 동화 생성</h2>
+        <p class="lead">아이의 어휘 수준에 맞춰 같은 동화를 3단계 난이도로 재구성합니다.</p>
+      </div>
+      <div class="split">
+        <div class="stack reveal">
+          <div class="keypoint">
+            <small>KEY POINT</small>
+            <h4>현직 교사 인터뷰로 기준 수립</h4>
+            <p>팀 기준만으로는 단계별 차이가 불분명</p>
+            <p class="then">교육 현장 기준을 세우고 교사 비교 평가로 확정</p>
+          </div>
+          <div class="keypoint light">
+            <small>PROBLEM</small>
+            <h4>GPT 비용 과다</h4>
+            <p>로컬 LLM은 매번 예시 필요, 결과 편차 큼</p>
+            <p class="then">GPT 데이터로 LoRA 튜닝</p>
+          </div>
+          <div class="stat hl">
+            <b>100<i>편</i></b>
+            <span>GPT 30편 비용으로 만든 한/영 동화</span>
+          </div>
+          <div class="stats two">
+            <div class="stat"><small>난이도 준수</small><b>+10<i>%</i></b></div>
+            <div class="stat"><small>의미 보존</small><b>+5<i>%</i></b></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="sub-head">기준 수립</h3>
+          <ol class="flow">
+            <li><b>현직 교사 인터뷰</b><span>교육 현장 기준</span></li>
+            <li><b>GPT 샘플 제작</b></li>
+            <li><b>교사 비교 평가</b><span>기존 결과와 비교</span></li>
+            <li class="hl"><b>난이도 기준 확정</b></li>
+          </ol>
+          <h3 class="sub-head">모델 학습</h3>
+          <ol class="flow">
+            <li><b>GPT 생성 데이터</b></li>
+            <li><b>LoRA 튜닝</b></li>
+            <li><b>로컬 LLM</b><span>짧은 프롬프트</span></li>
+            <li class="hl"><b>한/영 동화 100편</b></li>
+          </ol>
+          <figure class="figure" style="margin-top:28px"><img src="../assets/img/storydream-levels.png" alt="하나의 동화를 Level 1, 2, 3 세 단계 난이도로 재구성한 결과" loading="lazy" width="1263" height="707"><figcaption>같은 문장을 3단계 난이도로 재구성한 결과</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Illustration -->
+  <section class="section" id="illustration">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Illustration</p>
+        <h2>동화 삽화 생성</h2>
+        <p class="lead">장면이 바뀌어도 배경과 인물이 이어지도록 이전 맥락과 캐릭터 레퍼런스를 함께 넣어 생성합니다.</p>
+      </div>
+      <div class="split">
+        <div class="stack reveal">
+          <div class="keypoint light">
+            <small>EXPLICIT MEMORY</small>
+            <h4>이전 장면 맥락을 요약해 전달</h4>
+            <p>지금까지의 이야기, 현재 장소, 등장인물, 직전 구도를 짧게 요약해 다음 장면 프롬프트 앞에 넣음</p>
+            <p class="then">장면이 바뀌어도 배경과 상황이 이어짐</p>
+          </div>
+          <div class="keypoint light">
+            <small>CHARACTER REFERENCE</small>
+            <h4>캐릭터 이미지를 먼저 생성</h4>
+            <p>동화 전체에서 주요 인물을 뽑아 캐릭터 이미지를 만들고 장면 생성 때 참조로 사용</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="sub-head">생성 파이프라인</h3>
+          <div class="merge">
+            <div class="tracks">
+              <ol class="flow">
+                <li><b>현재 장면</b><span>동화 텍스트</span></li>
+                <li><b>장면 프롬프트</b><span>LLM + Explicit Memory</span></li>
+              </ol>
+              <ol class="flow">
+                <li><b>동화 전체</b><span>전 페이지</span></li>
+                <li><b>주요 인물 추출</b><span>Qwen3-VL-8B</span></li>
+                <li><b>캐릭터 이미지</b><span>FLUX</span></li>
+              </ol>
+            </div>
+            <span class="arrow"></span>
+            <div class="out"><b>FLUX.1 Kontext</b><span>레퍼런스 + 프롬프트</span></div>
+          </div>
+          <figure class="figure" style="margin-top:28px"><img src="../assets/img/storydream-illust.jpg" alt="생성된 동화 삽화 예시 — 소녀와 독수리, 작은 새들이 있는 들판" loading="lazy" width="1024" height="640"><figcaption><b>생성 결과 예시</b> — 장면마다 새로 생성해도 같은 인물과 이어지는 배경이 유지됨</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Focus -->
+  <section class="section alt" id="focus">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Focus Detection</p>
+        <h2>집중도 이탈 감지</h2>
+        <p class="lead">얼굴 방향(Front · Side · Back · Absent)으로 집중 여부를 판단합니다.</p>
+      </div>
+      <div class="split">
+        <div class="stack reveal">
+          <div class="keypoint light">
+            <small>PROBLEM</small>
+            <h4>기본 YOLO-Pose의 방향 판별 오류</h4>
+            <p>Side 오탐 (Precision 75.8%) · Back 놓침 (Recall 87.0%)</p>
+          </div>
+          <div class="keypoint">
+            <small>KEY POINT</small>
+            <h4>학습 · 평가 데이터를 직접 구축</h4>
+            <p><b>평가셋</b> — Front/Side/Back/Absent를 직접 촬영</p>
+            <p><b>CrowdHuman</b> — 얼굴 crop 후 DirectMHP로 방향 라벨링</p>
+            <p><b>PanoHead</b> — 정면 1장으로 360° 회전 이미지 생성</p>
+          </div>
+          <div class="stats two">
+            <div class="stat hl"><small>전체 F1</small><b>95.9<i>%</i></b><span>기존 91.9%</span></div>
+            <div class="stat hl"><small>Back F1</small><b>97.8<i>%</i></b><span>기존 92.0%</span></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="sub-head">데이터 구축</h3>
+          <div class="merge">
+            <div class="tracks">
+              <ol class="flow">
+                <li><b>CrowdHuman</b><span>군중 이미지</span></li>
+                <li><b>얼굴 crop + 라벨링</b><span>DirectMHP로 방향 추론</span></li>
+              </ol>
+              <ol class="flow">
+                <li><b>PanoHead</b><span>정면 1장</span></li>
+                <li><b>360° 회전 이미지 생성</b><span>모든 방향 데이터</span></li>
+              </ol>
+            </div>
+            <span class="arrow"></span>
+            <div class="out"><b>YOLO v11</b><span>파인튜닝</span></div>
+          </div>
+          <p class="class-chips">판정 클래스 <b>Front</b><b>Side</b><b>Back</b><b>Absent</b></p>
+
+          <div class="card chart" style="margin-top:28px">
+            <h4>전체 F1 <span class="unit">(%)</span></h4>
+            <div class="bars" role="img" aria-label="전체 F1 비교: YOLO-Pose 91.9, CrowdHuman 82.9, PanoHead 85.4, CrowdHuman + PanoHead 95.9">
+              <div class="bar-row" title="YOLO-Pose · 91.9%"><span class="bar-label">YOLO-Pose (기존)</span><span class="bar-track"><span class="bar-fill" style="--v:91.9"></span></span><span class="bar-val">91.9</span></div>
+              <div class="bar-row" title="CrowdHuman · 82.9%"><span class="bar-label">CrowdHuman</span><span class="bar-track"><span class="bar-fill" style="--v:82.9"></span></span><span class="bar-val">82.9</span></div>
+              <div class="bar-row" title="PanoHead · 85.4%"><span class="bar-label">PanoHead</span><span class="bar-track"><span class="bar-fill" style="--v:85.4"></span></span><span class="bar-val">85.4</span></div>
+              <div class="bar-row hl" title="CrowdHuman + PanoHead · 95.9%"><span class="bar-label">CrowdHuman + PanoHead</span><span class="bar-track"><span class="bar-fill" style="--v:95.9"></span></span><span class="bar-val">95.9</span></div>
+            </div>
+            <table class="score" style="margin-top:24px">
+              <caption>방향별 F1 <span class="unit" style="font-weight:400;color:var(--muted)">(%)</span></caption>
+              <thead><tr><th></th><th>Front</th><th>Side</th><th>Back</th></tr></thead>
+              <tbody>
+                <tr><th>YOLO-Pose (기존)</th><td>89.7</td><td>84.7</td><td>92.0</td></tr>
+                <tr class="hl"><th>CrowdHuman + PanoHead</th><td>89.7</td><td>92.6</td><td>97.8</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <figure class="figure" style="margin-top:20px"><img src="../assets/img/storydream-focus.jpg" alt="카메라로 아이의 시선을 실시간으로 감지하는 시연 장면" loading="lazy" width="1318" height="741"><figcaption>카메라로 시선을 감지해 화면에서 눈을 돌리면 알아챔</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Realtime -->
+  <section class="section" id="realtime">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Realtime</p>
+        <h2>캐릭터와의 실시간 대화</h2>
+        <p class="lead">집중이 흐트러지면 방금 읽은 내용으로 질문하고, 답을 판정한 뒤 이야기를 이어갑니다.</p>
+      </div>
+
+      <ol class="flow steps reveal">
+        <li class="dark"><b>집중도 저하</b><span>YOLO 감지</span></li>
+        <li><b>질문 생성</b><span>text · JSON</span></li>
+        <li><b>질문 발화</b><span>audio</span></li>
+        <li><b>답변 대기</b><span>server VAD</span></li>
+        <li><b>정오 판정</b><span>text · JSON</span></li>
+        <li><b>정답 O / X</b><span>피드백 · 표정</span></li>
+        <li><b>버퍼 확인</b><span>audio</span></li>
+        <li class="hl"><b>이어 읽기</b><span>멈춘 지점부터</span></li>
+      </ol>
+
+      <div class="split even reveal" style="margin-top:40px">
+        <ol class="numlist">
+          <li><div><b>WebRTC 스트리밍</b><span>요청–응답 왕복 대신 음성 입출력 스트리밍</span></div></li>
+          <li><div><b>Modality 분리</b><span>text로 JSON 판정 · audio로 문장만 발화</span></div></li>
+          <li><div><b>VAD 자동 응답 OFF</b><span>아이가 말하는 중 모델이 끼어들지 않게</span></div></li>
+          <li><div><b>오디오 버퍼 확인</b><span>말끝이 잘리지 않게 재생 완료 후 진행</span></div></li>
+        </ol>
+        <figure class="figure"><img src="../assets/img/storydream-realtime.jpg" alt="아이의 답변에 맞춰 캐릭터가 표정과 함께 반응하는 화면" loading="lazy" width="1317" height="738"><figcaption>아이의 답변에 맞춰 캐릭터가 표정과 함께 반응</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Result -->
+  <section class="section alt" id="result">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Result</p>
+        <h2>결과와 배운 점</h2>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><small>동화 제작</small><b>100<i>편</i></b><span>GPT 30편 비용으로 한/영 동화 100편</span></div>
+        <div class="stat"><small>난이도 준수</small><b>+10<i>%</i></b><span>LoRA 튜닝 로컬 LLM</span></div>
+        <div class="stat"><small>의미 보존</small><b>+5<i>%</i></b><span>LoRA 튜닝 로컬 LLM</span></div>
+        <div class="stat hl"><small>집중도 판정 F1</small><b>95.9<i>%</i></b><span>기존 YOLO-Pose 91.9%</span></div>
+      </div>
+
+      <h3 class="sub-head reveal">Learned</h3>
+      <ol class="learned reveal">
+        <li><b>기준은 실제 사용자 관점에서 검증되어야 한다</b><span>교사 인터뷰로 난이도 기준을 다시 세우며</span></li>
+        <li><b>AI는 운영 비용까지 고려해야 완성된다</b><span>GPT에서 LoRA 튜닝 로컬 LLM으로 옮기며</span></li>
+        <li><b>사용자가 바로 체감하는 부분부터 지켜야 한다</b><span>라즈베리파이에서 화면, 소리를 우선해 자원을 나누며</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="container">
+    <nav class="proj-nav" style="padding-top:72px" aria-label="다른 프로젝트">
+      <a href="edunote.html"><small>← PROJECT 03</small><b>EduNote</b></a>
+      <a class="next" href="moida.html"><small>PROJECT 01 →</small><b>MOIDA</b></a>
+    </nav>
+  </div>
+
+  <section class="outro">
+    <div class="container">
+      <p class="eyebrow">&lt;Contact /&gt;</p>
+      <h2>감사합니다</h2>
+      <div class="btns">
+        <a class="btn btn-primary" href="mailto:eunkyoung4160@gmail.com">eunkyoung4160@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/eunkyoung529" target="_blank" rel="noopener">github.com/eunkyoung529</a>
+        <a class="btn btn-ghost" href="../index.html">홈으로</a>
+      </div>
+      <footer>© 2026 Kim Eunkyoung</footer>
+    </div>
+  </section>
+</main>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
