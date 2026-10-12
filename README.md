@@ -9,10 +9,10 @@
 ```
 index.html              홈 (소개 · 프로젝트 · 기술 스택 · 경력 · 자격증/수상/활동 · 연락처)
 projects/
-  moida.html            PROJECT 01  MOIDA
-  codynow.html          PROJECT 02  CodyNow
-  edunote.html          PROJECT 03  EduNote
-  storydream.html       PROJECT 04  StoryDream
+  storydream.html       PROJECT 01  StoryDream
+  moida.html            PROJECT 02  MOIDA
+  codynow.html          PROJECT 03  CodyNow
+  edunote.html          PROJECT 04  EduNote
 assets/
   css/style.css         전체 스타일 (색 · 글꼴은 맨 위 :root 변수)
   js/main.js            헤더, 모바일 메뉴, 스크롤 등장 효과, 이미지 확대
